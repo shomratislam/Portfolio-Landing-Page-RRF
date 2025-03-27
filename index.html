@@ -23,24 +23,40 @@
     
     <!-- Header -->
 
-    <div class="lg:hidden max-lg:absolute w-[300px] right-0 h-[100%] bg-[#fc3314] p-10 z-100 max-md:w-[200px] max-md:p-6">
-        <ul class="flex text-white uppercase flex-col text-start gap-6 text-[20px] font-bold max-md:text-[16px] max-md:gap-4">
-            <li><a class="hover:italic" href="#about_section">About</a></li>
-            <li><a class="hover:italic" href="#services_section">Services</a></li>
-            <li><a class="hover:italic" href="#portfolio_section">Portfolio</a></li>
-            <li><a class="hover:italic" href="#blog_section">Blog</a></li>
-        </ul>
+    <div class="relative">
+
+        <input class="hidden" type="checkbox" name="" id="navbar">
+
+    
+        <div class="dropdowns flex items-center max-lg:absolute w-full h-0 overflow-hidden top-[105px] right-0 bg-[#fc3314]/10 backdrop-blur-[50px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] px-10 z-100 max-md:top-[71px] max-md:px-6 transition-all duration-300 lg:hidden">
+
+            <ul class="flex m-auto text-white uppercase flex-col gap-6 text-[20px] font-bold max-md:text-[16px] max-md:gap-4 max-lg:flex-col max-lg:items-center">
+                <li><a class="hover:italic" href="#about_section">About</a></li>
+                <li><a class="hover:italic" href="#services_section">Services</a></li>
+                <li><a class="hover:italic" href="#portfolio_section">Portfolio</a></li>
+                <li><a class="hover:italic" href="#blog_section">Blog</a></li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="w-full bg-[#FFD4D0] px-6 overflow-hidden max-lg:px-5 max-lg:border-b border-white/40 max-md:px-3">
+
+    
+    <div class="w-full bg-[#FFD4D0] px-6 overflow-x-hidden max-lg:px-5 max-lg:border-b border-white/40 max-md:px-3">
 
         <div class="max-w-[1200px] m-auto flex items-center justify-between gap-5 py-10 relative max-lg:py-7 max-md:py-3">
             <img class="absolute top-0 left-79 max-lg:w-[100px] max-lg:left-1/2 max-lg:-translate-x-1/2 max-md:left-2/2 max-md:-ml-4" src="./assets/images/background-circle.svg" alt="circle">
 
             <div class="w-[25%] max-md:w-[50%]"><a href="#"><img class="w-[136px] z-0" src="./assets/images/site-logo/rrf-logo.svg" alt="rrf-logo"></a></div>
 
-            <div class="w-[50%] flex justify-center z-100 max-md:justify-end max-md:w-[50%]">
-                <img class="w-[40px] lg:hidden" src="./assets/images/menu-line.svg" alt="menu">
+            <div class="w-[50%] flex justify-center z-10 max-md:justify-end max-md:w-[50%]">
+
+
+                <label for="navbar" class="icons z-20">
+                    <img class="w-[40px] max-md:w-[35px] lg:hidden " id="menu_icon" src="./assets/images/menu-line.svg" alt="menu">
+                </label>
+                
+
                 <ul class="flex gap-8 text-[18px] font-bold max-lg:hidden">
                     <li><a class="hover:italic" href="#about_section">About</a></li>
                     <li><a class="hover:italic" href="#services_section">Services</a></li>
@@ -49,7 +65,7 @@
                 </ul>
             </div>
 
-            <div class="w-[25%] flex justify-end z-100 max-md:hidden"> <a class="bg-[#1F1F1F] py-3 px-6 text-white font-bold duration-300 hover:bg-[#fc3314]" href="#">Let’s Talk</a> </div>
+            <div class="w-[25%] flex justify-end z-10 max-md:hidden"> <a class="bg-[#1F1F1F] py-3 px-6 text-white font-bold duration-300 hover:bg-[#fc3314]" href="#">Let’s Talk</a> </div>
 
         </div>
 
