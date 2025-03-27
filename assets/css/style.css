@@ -1,3 +1,4 @@
+
 body{
     font-family: "Montserrat", sans-serif;
     color: #1F1F1F;
@@ -34,8 +35,8 @@ h1,h2,h3,h4,h5,h6{
   }
   @media (max-width: 768px) {
     .heading {
-        font-size: 28px;
-        line-height: 37px;
+        font-size: 27px;
+        line-height: 36px;
     }
   }
   
@@ -46,3 +47,10 @@ textarea{
 html {
     scroll-behavior: smooth;
   }
+
+#navbar:checked ~ .dropdowns {
+    height: 300px;
+    @media (max-width: 768px) {
+        height: 200px;
+      }
+}
